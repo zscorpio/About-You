@@ -1,0 +1,357 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	outline: none;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+a {
+	color: #666;
+}
+
+a:hover,
+a:focus {
+	color: #333;
+}
+
+a:active {
+	color: #000;
+}
+
+body { 
+	font: 12px/16px "Microsoft Yahei","Lucida Grande", Verdana, sans-serif;
+	background: url(../img/body-top.gif) repeat-x 0 0, url(../img/body.gif) repeat 0 0;
+	background-color: #a7b1ba;
+	padding-top: 5px;
+	color: #999;
+}
+
+#container {
+	width: 490px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#header { 
+	background: url(../img/header.png) no-repeat 50% bottom;
+	height: 85px;
+	padding: 35px 35px 0;
+}
+
+#photo{
+	position: absolute;
+	top: 30px;
+	right: 60px;
+	width: 40px;
+	height: 41px;
+	text-align: center;
+}
+
+h1 {
+	font: 24px/30px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#000;
+	padding-top: 18px;
+	padding-left: 10px;
+}
+
+#describe{
+	color: #888;
+	padding-left: 10px;
+	line-height: 20px;
+	text-shadow: #eee 0 1px 0;
+}
+
+#nav {
+	height: 30px;
+	padding: 5px 35px;
+	background: url(../img/navigation.png) no-repeat 50% 0;
+	line-height: 28px;
+	font-weight: bold;
+}
+
+#nav .idTabs li a{
+	padding-right: 10px;
+	margin-right: 5px; 
+	float: left;
+	color: #666;
+	background: url(../img/navigation-li-a.png) no-repeat right 30px;
+}
+
+#nav .idTabs li a span{
+	float: left;
+	padding: 1px 0 1px 10px;
+	background: url(../img/navigation-li.png) no-repeat 0 30px;
+}
+
+#nav .idTabs .fnode_r {
+	float: right;	
+}
+
+#nav .idTabs li a:hover,
+#nav .idTabs li a:focus {
+	background-position: right 0;
+	text-shadow: #ddd 0 1px 0;
+}
+
+#nav .idTabs li a:hover span,
+#nav .idTabs li a:focus span {
+	background-position: 0 0;
+}
+
+#nav .idTabs li a:active {
+	background-position: right -30px;
+	text-shadow: #eee 0 1px 0;
+}
+
+#nav .idTabs li a:active span {
+	background-position: 0 -30px;
+	padding: 2px 0 0 10px;
+}
+
+#content {
+	padding: 0 20px; 
+	background: url(../img/content.png) repeat-y 50% 0;
+	overflow: hidden;
+}
+
+#accounts{
+	background: url(../img/networks.png) repeat 0 0;
+	width: 450px;
+	float: left;
+}
+
+#accounts li {
+	width: 225px;
+	height: 60px;
+	float: left;
+}
+
+#accounts li a {
+	display: block;
+	width: 225px;
+	height: 45px;
+	padding: 10px 0 5px;
+	text-decoration: none;
+	-webkit-transition: background-color 0.25s linear;
+}
+
+#accounts li a:hover,
+#accounts li a:focus {
+	background: rgba(164, 173, 183, .15);
+}
+
+#accounts li a:active {
+	background: rgba(164, 173, 183, .25);
+	padding: 12px 0 3px
+}
+
+#accounts li a img {
+	float: left;
+	margin: 0 10px 0 15px;
+	-webkit-transition: margin-left 0.25s linear;
+}
+
+#accounts li a:hover img {
+	margin-left: 10px;
+}
+
+#accounts li a strong {
+	color: #000;
+	font: 18px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: block;
+	padding-top: 2px;
+}
+
+#about {
+	width: 450px;
+}
+
+#about li li {
+	padding: 5px 20px 0 65px;
+}
+
+#about li p#i {
+	width: 40px;
+	float: left;
+	padding: 5px 10px 0 15px;
+	text-align: right;
+}
+
+#about h2 {
+	height: 60px;
+	font-weight: normal; 
+	background: url(../img/about-h3.png) repeat-x 0 0;
+}
+
+#about h2 a {
+	display: block;
+	height: 45px;
+	padding: 10px 0 5px;
+	text-decoration: none;
+	-webkit-transition: background-color 0.25s linear;
+}
+
+#about h2 a:hover,
+#about h2 a:focus {
+	background: rgba(164, 173, 183, .15);
+}
+
+#about h2 a:active {
+	background: rgba(164, 173, 183, .25);
+	padding: 12px 0 3px
+}
+
+#about h2 a img {
+	float: left;
+	margin: 0 10px 0 15px;
+	-webkit-transition: margin-left 0.25s linear;
+}
+
+#about h2 a:hover img {
+	margin-left: 10px;
+}
+
+#about h2 a strong {
+	color: #000;
+	font: 18px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: block;
+	padding-top: 2px;
+}
+
+#about h2 a small {
+	margin-top: 10px;
+	float: right;
+	line-height: 20px;
+	padding: 0 25px 1px 30px;
+	background: url(../img/about-h3-small.png) no-repeat 0 0;
+	color: #fff; 
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: #bbb 0 1px 0;
+}
+
+#links {
+	width: 450px;
+}
+
+#links li li {
+	padding: 5px 20px 0 65px;
+}
+
+#links li p#i {
+	width: 40px;
+	float: left;
+	padding: 5px 10px 0 15px;
+	text-align: right;
+}
+
+#links h2 {
+	height: 60px;
+	font-weight: normal; 
+	background: url(../img/about-h3.png) repeat-x 0 0;
+}
+
+#links h2 a {
+	display: block;
+	height: 45px;
+	padding: 10px 0 5px;
+	text-decoration: none;
+	-webkit-transition: background-color 0.25s linear;
+}
+
+#links h2 a:hover,
+#links h2 a:focus {
+	background: rgba(164, 173, 183, .15);
+}
+
+#links h2 a:active {
+	background: rgba(164, 173, 183, .25);
+	padding: 12px 0 3px
+}
+
+#links h2 a img {
+	float: left;
+	margin: 0 10px 0 15px;
+	-webkit-transition: margin-left 0.25s linear;
+}
+
+#links h2 a:hover img {
+	margin-left: 10px;
+}
+
+#links h2 a strong {
+	color: #000;
+	font: 18px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: block;
+	padding-top: 2px;
+}
+
+#links h2 a small {
+	margin-top: 10px;
+	float: right;
+	line-height: 20px;
+	padding: 0 25px 1px 30px;
+	background: url(../img/about-h3-small.png) no-repeat 0 0;
+	color: #fff; 
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: #bbb 0 1px 0;
+}
+
+#contact{
+	width: 450px;
+	float: left;
+	background: url(../img/about-li.png) repeat-x 0 bottom;
+	position: relative;
+}
+
+#contact h2 {
+	height: 51px;
+	padding: 10px 0 0 25px;
+	font-weight: normal; 
+	background: url(../img/about-h3.png) repeat-x 0 0;
+	color: #666;
+}
+
+#contact h2 strong {
+	color: #000;
+	font: 18px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: block;
+	padding-top: 2px;
+}
+
+#personal {
+	background: url(../img/contact.png) repeat-y 100% 0px;
+}
+
+#personal ul li {
+	padding: 5px 0 0 25px;
+	font: 12px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000;
+}
+
+#other ul li {
+	padding: 5px 0 0 25px;
+	font: 12px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000;
+}
+
+#personal,#other {
+	width: 225px;
+	float: left;
+	padding-bottom: 10px;
+}
+
+#footer {
+	padding: 0 20px 20px;
+	text-align: center;
+	line-height: 30px;
+	background: url(../img/footer.png) no-repeat 50% 0;
+	color: #888;
+	text-transform: uppercase;
+	font-size: 9px;
+	font-weight: bold;
+}

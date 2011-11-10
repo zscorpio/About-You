@@ -1,0 +1,28 @@
+1319301103TS---><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh_CN" lang="zh_CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="蝎紫の网络名片">
+	<meta name="author" content="蝎紫">
+	<meta name="keywords" content="蝎紫,名片,在线">
+	<title>名片</title>
+	<link rel="shortcut icon" href="http://localhost/card/img/favicon.ico">
+	<base href="http://localhost/card/"/>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+		</div>			<div id="login">
+				<a href="#"><img src="http://localhost/card/img/qq.png"></a>
+				<a href="#"><img src="http://localhost/card/img/weibo.png"></a>
+				<a href="#"><img src="http://localhost/card/img/twitter.png"></a>
+				<a href="#"><img src="http://localhost/card/img/douban.png"></a>
+				<a href="#"><img src="http://localhost/card/img/txwb.png"></a>
+				<a href="#"><img src="http://localhost/card/img/google+.png"></a>
+				<a href="#"><img src="http://localhost/card/img/facebook.png"></a>
+			</div>			<div id="foot">
+			<p>Copyright &copy; 2011 蝎紫</p>
+		</div>
+	</div>
+</body>
+</html>

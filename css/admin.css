@@ -1,0 +1,277 @@
+
+* {
+	margin:0; padding:0;
+	font-size:100%;
+}
+
+body{
+	background:#000 url(../img/bg_tail.jpg) repeat top center; 
+	text-align:center;
+}
+
+img {vertical-align:top;}
+a img { border:0;}
+
+ul { list-style:none;}
+
+.left { float:left;}
+.right {float:right;}
+.clear  { clear:both;}
+
+html, input, textarea
+	{
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:12px;
+		line-height:15px;
+		color:#8c8c8c;
+	}
+
+object { 
+	vertical-align:top; 
+	outline:none;
+}
+
+
+
+
+input, select { vertical-align:middle; font-weight:normal;}
+
+a {color:#fff; outline:none;}
+a:hover{text-decoration:none; color:#0084ff;}
+p {padding-bottom:15px;}
+
+h1 {font-size:24px; color:#fff; line-height:1.2em; text-transform:uppercase; padding:0 0 12px; margin-left:-3px;}
+h2 {font-size:12px; color:#fff; padding:0 0 18px; font-weight:normal;}
+h3 {font-size:12px; color:#fff; padding:0 0 18px; font-weight:normal; text-align:right;}
+h3 span {color:#0084ff;}
+
+/* ============================= main layout ====================== */*
+html, body {
+	height: 100%;
+}
+.footer_wrapper {background:url(../img/bg_content.jpg) no-repeat top center;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -80px; /* the bottom margin is the negative value of the footer's height */
+}
+.push {
+	height: 80px; /* .push must be the same height as .footer */
+}
+
+.imgindent {margin:0 20px 0 0; float:left; padding:6px 0 0;}
+.fright {text-align:right;}
+#main .last {padding-bottom:18px;}
+
+/* ============================= header ====================== */
+#header {background:url(../img/bg.png) no-repeat center 39px; padding:48px 12px 0 7px;}
+#header .menu li{display:inline; margin-right:11px;}
+#header .menu a {text-decoration:none; font-size:14px; line-height:24px; color:#fff;display:inline-block;
+	margin:0 7px 0 8px; }
+#header .menu a:hover {color:#0084ff;}
+#header .menu a.active span {display:inline-block;}
+#header .menu a.active {background:#232323; margin:0;}
+#header .menu a.active span {background:url(../img/btn_left.gif) no-repeat left top;}
+#header .menu a.active span span{
+	background:url(../img/btn_right.gif) no-repeat right top;
+	padding:0 7px 1px 8px;
+}
+/* ============================= content ====================== */
+.content ul {margin:-3px 0 -1px;}
+.content li { background:url(../img/marker.gif) no-repeat 0 4px; padding-left:28px; line-height:22px;}
+.content li a {color:#009cff;}
+
+.block1 {background:url(../img/block_bg.gif) no-repeat -2px 31px;}
+.block1 h1 {letter-spacing:-1px;}
+.block1 p {padding:19px 0 26px;}
+/*buttons*/
+a.btn{
+	background:#232323;
+	display:inline-block;
+	font-size:12px;
+	line-height:25px;
+	color:#fff;
+	text-decoration:none;
+}
+a.btn span{
+	background:url(../img/btn_left.gif) no-repeat left top;
+	display:inline-block;
+}
+a.btn span span{
+	background:url(../img/btn_right.gif) no-repeat right top;
+	padding:0 9px 0 10px;
+}
+a.btn span span span {background:none; padding:0;}
+a.btn:hover {background:#0084ff;}
+a.btn:hover span {background:url(../img/btn_left.gif) no-repeat left bottom;}
+a.btn:hover span span {background:url(../img/btn_right.gif) no-repeat right bottom;}
+
+/*phone*/
+.phone span {display:inline-block; width:85px; font-weight:normal;}
+
+/* ============================= footer ====================== */
+#footer {background:url(../img/bg.png) no-repeat top center;}
+.footer span {margin:0 3px;}
+#footer a {color:#fff; text-decoration:none;}
+#footer a:hover {color:#009cff;}
+#footer li {color:#8c8c8c; float:left;}
+#footer li a {color:#8c8c8c; margin:0 6px 0 5px;}
+#footer a.active,#footer a.active:hover {color:#fffefe; cursor:default;}
+
+/* ============================= forms ============================= */
+#ContactForm label {display:block; background:url(../img/input_bg.gif) no-repeat left 17px; height:52px;}
+#ContactForm .col4 {background:url(../img/textarea_bg.gif) no-repeat left 17px;}
+#ContactForm input, #ContactForm textarea {
+	background:none;
+	width:224px;
+	border:0;
+	padding:6px 5px;
+	color:#fff;
+}
+#ContactForm p {padding-bottom:3px;}
+#ContactForm a {margin-left:9px;}
+#ContactForm input {font-size:1em;}
+#ContactForm textarea {height:121px; overflow:auto; margin-bottom:20px; width:203px;}
+#page5 .content {padding-left:5px;}
+/*================ carousel ==========================*/
+.carousel {	height:400px;}
+#pane5 {height:400px;}
+
+.jScrollPaneContainer {
+	z-index: 1;
+	overflow: hidden;
+	position: relative;
+	height:400px !important;
+}
+.jScrollPaneTrack {
+	background: url(../img/slider-bg.gif) no-repeat 0% 3px;
+	left: 0px;
+	width: 999px;
+	cursor: pointer;
+	top: 344px;
+	position: absolute;
+	
+}
+.jScrollIntervalTrack {
+	position: absolute;
+	display:none
+}
+.jScrollPaneDrag {
+	background: url(../img/handle.gif) no-repeat 0% 0%;
+	overflow: hidden;
+	cursor: pointer;
+	position: absolute;
+	margin:3px 0;
+	width:200px!important;
+}
+.jScrollPaneDragLeft {
+	left: 0px;
+	overflow: hidden;
+	bottom: 0px;
+	position: absolute
+}
+.jScrollPaneDragRight {
+	right: 0px;
+	overflow: hidden;
+	bottom: 0px;
+	position: absolute
+}
+
+ul.blocks {
+	display: block;
+	padding: 0px;
+	width: 4995px;
+	height: 308px;
+	overflow:hidden
+}
+ul.blocks li.scroll-interval {
+	display: block;
+	float: left;
+	margin: 0px !important;
+	width: 999px;
+	height: 290px;
+	overflow:hidden;
+}
+.holder {
+	display: block;
+}
+.scroll-pane {
+	padding-right:0px;
+	padding-left: 0px;
+	float: left;
+	padding-bottom: 0px;
+	width: 999px;
+	padding-top: 0px
+}
+#pane5 {
+	padding-right: 0px;
+	display: block;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	overflow: hidden;
+	width: 999px;
+	padding-top: 0px;
+	height: 315px;
+}
+.block_ind {
+	float:left;
+	width:91px;
+}
+.left95 {
+	margin-left:95px	
+}
+.white {
+	color:#fff !important	
+}
+.grey {
+	color:#706b64	
+}
+.pt10 {
+	font-size:10px;
+	text-transform:uppercase
+}
+.list {
+	margin-bottom:17px;
+	position:relative;
+}
+.list li {
+	background:url(../img/mark.png) no-repeat 0% 6px ;
+	
+	float:none !important;
+	display:block !important;
+	width:auto !important;
+	height: auto !important;
+}
+.list li a {
+	font-size:10px;
+	text-transform:uppercase;
+	color:#f03806;
+	text-decoration:none
+}
+.list li a:hover {
+	text-decoration:underline	
+}
+.list2 {
+	margin-bottom:17px;
+	position:relative;
+}
+.list2 li {
+	background:url(../img/mark2.png) no-repeat 0% 6px ;
+	padding:0 0 0 18px;
+	float:none !important;
+	display:block !important;
+	width:auto !important;
+	height: auto !important;
+}
+.list2 li a {
+	font-size:10px;
+	text-transform:uppercase;
+	color:#fff;
+	text-decoration:none
+}
+.list2 li a:hover {
+	text-decoration:underline	
+}
+.width165 {
+	width:165px	
+}

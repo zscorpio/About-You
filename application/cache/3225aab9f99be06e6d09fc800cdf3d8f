@@ -1,0 +1,93 @@
+1319281886TS---><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh_CN" lang="zh_CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="蝎紫の网络名片">
+	<meta name="author" content="蝎紫">
+	<meta name="keywords" content="蝎紫,名片,在线">
+	<title>蝎紫の网络名片</title>
+	<link rel="stylesheet" href="http://localhost/card/css/style.css" type="text/css" media="screen" />
+	<link rel="shortcut icon" href="http://localhost/card/img/favicon.ico">
+	<script src="http://localhost/card/js/jquery-1.6.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://localhost/card/js/jquery.tab.js" type="text/javascript" charset="utf-8"></script>
+	<base href="http://localhost/card/"/>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<h1>蝎紫</h1>
+			<p id="describe">PHPer,Bloger,ITer...</p>
+			<p id="photo"><img src="http://localhost/card/img/photo.png" width="80" height="80"/></p>
+		</div>		<div id="nav">
+			<ul class="idTabs"> 
+				<li class="fnode"><a href="#accounts"><span>Accounts</span></a></li> 
+				<li class="fnode"><a href="#about"><span>About</span></a></li>
+				<li class="fnode"><a href="#contact"><span>Contact</span></a></li>		  
+				<li class="fnode"><a href="#links"><span>Links</span></a></li>		  
+			</ul>
+		</div>		<div id="content">
+			<div id="accounts">
+						
+					<li><a href="http://www.zscorpio.com"><img src="./img/qq.png" width="40" height="40" alt="qq"><strong>QQ</strong>29060195</a></li>
+																
+					<li><a href="https://www.facebook.com/chouscorpio"><img src="./img/facebook.png" width="40" height="40" alt="qq"><strong>Facebook</strong>Chouscorpio</a></li>
+																
+					<li><a href="https://plus.google.com/104304137380888729289"><img src="./img/google+.png" width="40" height="40" alt="qq"><strong>Google+</strong>scorpio</a></li>
+																
+					<li><a href="http://www.zscorpio.com"><img src="./img/twitter.png" width="40" height="40" alt="qq"><strong>Twitter</strong>29060195</a></li>
+																
+					<li><a href="http://weibo.com/zswscorpio"><img src="./img/weibo.png" width="40" height="40" alt="qq"><strong>微博</strong>zswscorpio</a></li>
+																
+					<li><a href="http://www.douban.com/people/zswscorpio"><img src="./img/douban.png" width="40" height="40" alt="qq"><strong>豆瓣</strong>zswscorpio</a></li>
+																
+					<li><a href="http://t.qq.com/patapong"><img src="./img/txwb.png" width="40" height="40" alt="qq"><strong>腾讯微博</strong>patapong</a></li>
+																
+					<li><a href="http://www.zscorpio.com"><img src="./img/blog.png" width="40" height="40" alt="qq"><strong>个人博客</strong>蝎紫</a></li>
+									
+				</ul>
+			</div> 
+			<div id="about">
+				<ul>			
+					<li>
+						<p id="i">我...</p>
+					 	<ul>
+							<li>标准天蝎座宅男，昵称蝎紫||scorpio</li>
+							<li>记仇但是善良,不好惹~</li>
+							<li>喜欢折腾计算机但是对硬件不怎么感冒</li>
+							<li>非标准90后，不脑残不非主流</li>
+						</ul>
+					</li>	
+				</ul>
+			</div>
+			<div id="links">
+				<ul>
+					<li class="node"><h2><a href="http://www.zscorpio.com/" ><img src="http://localhost/card/img/blog.png"><small>个人博客</small><strong>Blog</strong>zscorpio.com</a></h2></li>				
+					<li class="node"><h2><a href="http://www.flyplume.net/" ><img src="http://localhost/card/img/flyplume.png"><small>飞羽主页</small><strong>Flyplume</strong>flyplume.net</a></h2></li>				
+				</ul>
+			</div>			
+			<div id="contact">
+				<ul>
+					<li id="personal">
+						<h2><strong>个人简历</strong>请QQ或者邮箱联系我来获取</h2>						
+						<ul>
+							<li class="email"><a href="mailto:zsw.scorpio@gmail.com" rel="me">邮箱:zsw.scorpio@gmail.com</a></li>
+							<li><img src="http://localhost/card/img/touxiang.png"></li>
+						</ul>
+					</li>
+					<li id="other">
+						<h2><strong>学历</strong>Student of ZJUT</h2>
+						<ul>
+							<li>泽国二小</li>
+							<li>温岭市实验学校</li>
+							<li>温岭中心</li>
+							<li>浙江工业大学</li>						
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>		<div id="footer">
+			<p>Copyright &copy; 2011 蝎紫</p>
+		</div>
+	</div>
+</body>
+</html>

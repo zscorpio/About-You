@@ -1,0 +1,145 @@
+				QQ</br>
+				昵称:<?=form_input('qname') ?>
+				帐号:<?=form_input('qaccount') ?>
+				链接:<?=form_input('qlink') ?></br>
+				Facebook</br>
+				昵称:<?=form_input('fname') ?>
+				帐号:<?=form_input('faccount') ?>
+				链接:<?=form_input('flink') ?></br>
+				Google+</br>
+				昵称:<?=form_input('gname') ?>
+				帐号:<?=form_input('gaccount') ?>
+				链接:<?=form_input('glink') ?></br>
+				Twitter</br>
+				昵称:<?=form_input('tname') ?>
+				帐号:<?=form_input('taccount') ?>
+				链接:<?=form_input('tlink') ?></br>
+				微博</br>
+				昵称:<?=form_input('wname') ?>
+				帐号:<?=form_input('waccount') ?>
+				链接:<?=form_input('wlink') ?></br>
+				豆瓣</br>
+				昵称:<?=form_input('dname') ?>
+				帐号:<?=form_input('daccount') ?>
+				链接:<?=form_input('dlink') ?></br>
+				腾讯微博</br>
+				昵称:<?=form_input('xname') ?>
+				帐号:<?=form_input('xaccount') ?>
+				链接:<?=form_input('xlink') ?></br>
+				个人博客</br>
+				昵称:<?=form_input('bname') ?>
+				帐号:<?=form_input('baccount') ?>
+				链接:<?=form_input('blink') ?></br>
+				
+							$data['fname']=$this->input->post('fname');$data['faccount']=$this->input->post('faccount');$data['flink']=$this->input->post('flink');
+			$data['gname']=$this->input->post('gname');$data['gaccount']=$this->input->post('gaccount');$data['glink']=$this->input->post('glink');
+			$data['tname']=$this->input->post('tname');$data['taccount']=$this->input->post('taccount');$data['tlink']=$this->input->post('tlink');
+			$data['wname']=$this->input->post('wname');$data['waccount']=$this->input->post('waccount');$data['wlink']=$this->input->post('wlink');
+			$data['dname']=$this->input->post('dname');$data['daccount']=$this->input->post('daccount');$data['dlink']=$this->input->post('dlink');
+			$data['xname']=$this->input->post('xname');$data['xaccount']=$this->input->post('xaccount');$data['xlink']=$this->input->post('xlink');
+			$data['bname']=$this->input->post('bname');$data['baccount']=$this->input->post('baccount');$data['blink']=$this->input->post('blink');
+			
+			
+			
+			
+							<?=form_open('admin/edit_info') ?>
+				<? foreach ($info as $row):?>
+				昵称:<?=form_input('name',$row->name)?></br>
+				介绍:<?=form_input('describe',$row->describe) ?></br>
+				<?endforeach;?>
+				<?=form_submit('submit', '修改') ?></br>
+				<?php
+					echo '<img src="./img/qq.png" width="40" height="40" alt="qq">';
+					if($qq_exit){
+						echo '已与您的QQ帐号<span>'.$qq_exit[0]->account.'</span>绑定'.'</br>';
+					}else{
+						echo anchor($qq, '绑定QQ').'</br>';
+					}
+					
+					echo '<img src="./img/facebook.png" width="40" height="40" alt="qq">';
+					if($fb_exit){
+						echo '已与您的facebook帐号<span>'.$fb_exit[0]->account.'</span>绑定'.'</br>';
+					}else{
+						echo anchor('admin/add_fb', '绑定Facebook').'</br>';
+					}	
+					
+					echo '<img src="./img/google+.png" width="40" height="40" alt="qq">';
+					if($gg_exit){
+						echo '已与您的google+帐号<span>'.$gg_exit[0]->account.'</span>绑定'.'</br>';
+					}else{
+						echo anchor('admin/add_gg', '绑定Google+').'</br>';
+					}					
+
+					echo '<img src="./img/twitter.png" width="40" height="40" alt="qq">';
+					if($twitter_exit){
+						echo '已与您的twitter帐号<span>'.$twitter_exit[0]->account.'</span>绑定'.'</br>';
+					}else{
+						echo anchor(base_url().'index.php/index/twitter', '绑定Twitter').'</br>';
+					}	
+					
+					echo '<img src="./img/weibo.png" width="40" height="40" alt="qq">';
+					if($weibo_exit){
+						echo '已与您的微博帐号<span>'.$weibo_exit[0]->account.'</span>绑定'.'</br>';
+					}else{
+						echo anchor($weibo, '绑定微博').'</br>';
+					}	
+					
+					echo '<img src="./img/msn.png" width="40" height="40" alt="qq">';
+					if($msn_exit){
+						echo '已与您的MSN帐号<span>'.$msn_exit[0]->account.'</span>绑定'.'</br>';
+					}else{
+						echo anchor($msn, '绑定MSN').'</br>';
+					}	
+
+					echo '<img src="./img/renren.png" width="40" height="40" alt="qq">';
+					if($renren_exit){
+						echo '已与您的人人帐号<span>'.$renren_exit[0]->account.'</span>绑定'.'</br>';
+					}else{
+						echo anchor($renren, '绑定人人').'</br>';
+					}						
+					
+					echo '<img src="./img/douban.png" width="40" height="40" alt="qq">';
+					if($douban_exit){
+						echo '已与您的豆瓣帐号<span>'.$douban_exit[0]->account.'</span>绑定'.'</br>';
+					}else{
+						echo anchor(base_url().'douban/request_token.php', '绑定豆瓣').'</br>';
+					}	
+					
+					echo '<img src="./img/txwb.png" width="40" height="40" alt="qq">';
+					if($txwb_exit){
+						echo '已与您的腾讯微博帐号<span>'.$txwb_exit[0]->account.'</span>绑定'.'</br>';
+					}else{
+						echo anchor(base_url().'index.php/txwb/index?go_oauth', '绑定腾讯微博').'</br>';
+					}						
+
+				?>
+				<?=form_close() ?>
+				
+				
+								<?=form_open('admin/update') ?>
+				请选择账户：<select name="account_id">
+							<? foreach ($account as $row):?>
+								<option value="<?=$row->account_id ?>"><?=$row->name.'-'.$row->account ?></option>
+							<?endforeach;?>
+							</select></br>
+				昵称:<?=form_input('account') ?></br>
+				链接:<?=form_input('link') ?></br>
+				<?=form_submit('submit', '修改') ?>
+				<?=form_close() ?>
+				<?=form_open('admin/add_account') ?>
+				昵称:<?=form_input('account') ?></br>
+				链接:<?=form_input('link') ?></br>
+				<?=form_submit('submit', '增加') ?>
+				<?=form_close() ?>
+				<?=form_open('admin/add_links') ?>
+				logo:<?=form_input('logo') ?></br>
+				昵称:<?=form_input('name') ?></br>
+				解释:<?=form_input('ex') ?></br>
+				链接:<?=form_input('link') ?></br>
+				<?=form_submit('submit', '增加') ?>
+				<?=form_close() ?>
+				<?=anchor("admin/logout/", "退出") ?>
+				<?=anchor("admin/info/", "预览") ?>
+			
+			
+			
